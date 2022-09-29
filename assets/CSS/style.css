@@ -1,0 +1,51 @@
+
+
+:root {
+  --c-black: #000000;
+  --c-white: #ffffff;
+  --c-lgrey: #d3d3d3;
+  --c-red: #ff6961;
+  --c-green: #77dd77;
+  --c-turquoise: #06aed5;
+  --c-orange: #ee964b;
+  --c-yellow: #f4d35e;
+  --c-dblue: #023047;
+  --c-blue: #219ebc;
+  --c-lblue: #8ecae6;
+  --modal-duration: 1s;
+  
+}
+
+/* MODAL */
+#modal-content{
+animation-name: modalopen;
+  animation-duration: var(--modal-duration);
+  background: var(--c-lblue);
+}
+.modal-header {
+  background: var(--c-lblue);
+  text-align: center;
+}
+
+#close-modal{
+  text-decoration: none;
+}
+
+#image {
+  max-height: 450px;
+}
+
+.search-results {
+  display: block;
+  text-align: center;
+  width: 100%;
+}
+
+@keyframes modalopen {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
